@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="company-container">
+    <h2>Select a Company</h2>
+    <form id="companyForm" onsubmit="return handleCompanySubmit(event)">
+      <label for="company">Choose Company:</label>
+      <select id="company" name="company" required>
+        <option value="">Select</option>
+        <option value="Company A">Company A</option>
+        <option value="Company B">Company B</option>
+        <option value="Company C">Company C</option>
+      </select>
+
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" required>
+
+      <label for="coverLetter">Upload Cover Letter:</label>
+      <input type="file" id="coverLetter" name="coverLetter" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="popup-message" id="popup">
+      <p>Your application has been submitted successfully!</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

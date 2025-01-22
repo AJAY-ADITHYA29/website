@@ -1,0 +1,61 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('"C:\Users\ADMIN\Desktop\basic\istockphoto-1359762764-612x612.jpg"');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Login form styling */
+  .login-container, .form-container, .company-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  input, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling for pop-up message */
+  .popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .popup-message button {
+    margin-top: 10px;
+    background-color: #2196F3;
+  }
+  
